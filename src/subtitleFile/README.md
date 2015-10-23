@@ -1,0 +1,3 @@
+NULLDEV DID NOT WRITE ANY OF THE CODE IN THIS FOLDER! THE ORIGINAL AUTHOR IS SHOWN BELOW!
+
+JDaren: https://github.com/JDaren/subtitleConverter
