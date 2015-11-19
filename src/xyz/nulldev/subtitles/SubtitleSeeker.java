@@ -21,7 +21,9 @@ import java.util.TimerTask;
  * Fast, reliable and stable subtitles for VideoView using just a TextView!
  */
 public class SubtitleSeeker {
-
+    
+    //How often should we sync the subtitles with the VideoView? (In milliseconds)
+    //Decreasing this number will result in smoother subtitles but a slower app
     int delay = 250;
 
     int prevTime = 0;
@@ -131,7 +133,7 @@ public class SubtitleSeeker {
 
         @Override
         public void run() {
-            if (captionList != null) {
+            if (captionList != null && view != null) {
                 //Get the current position
                 int currentPosition = view.getCurrentPosition();
                 //Check if the user is seeking around
